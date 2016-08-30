@@ -1,0 +1,29 @@
+baseurl = "http://alisson.net/"
+languageCode = "en-us"
+title = "Alisson Patricio"
+author = "Alisson Partricio"
+canonifyurls = true
+publishdir = "public"
+
+[permalinks]
+	post = "/blog/:year/:month/:day/:title/" # change the post URL to look like the old ones
+
+[params]
+  # Shown in the home page
+  brand = "Alisson"
+  disqus = "alissonpatricio"
+
+[social]
+  github = "nossila"
+  bitbucket = "alisson"
+  facebook = "alissonpatricio" 
+  instagram = "filhodeali"
+
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 0
+    identifier = "home"
+    url = "/"
