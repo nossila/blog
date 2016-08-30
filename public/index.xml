@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alisson Patricio</title>
+    <link>http://alisson.net/</link>
+    <description>Recent content on Alisson Patricio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Jan 2013 07:31:42 -0200</lastBuildDate>
+    <atom:link href="http://alisson.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Nginx error_page with proxy and memcached</title>
+      <link>http://alisson.net/blog/2013/01/17/nginx-error_page-with-proxy-and-memcached/</link>
+      <pubDate>Thu, 17 Jan 2013 07:31:42 -0200</pubDate>
+      
+      <guid>http://alisson.net/blog/2013/01/17/nginx-error_page-with-proxy-and-memcached/</guid>
+      <description>&lt;p&gt;Today I was trying to setup a custom error_page on my nginx server and I had some hard time trying to make it work so here&amp;rsquo;s what I&amp;rsquo;ve learned.&lt;/p&gt;
+
+&lt;p&gt;When serving static files or have the simplest upstream configuration I could just easily set &lt;em&gt;error_page&lt;/em&gt; and everything should work like its supposed to, like this:&lt;/p&gt;
+
+&lt;script src=&#34;//gist.github.com/nossila/4557047.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;But when you make use of &lt;em&gt;error_page&lt;/em&gt; as a way to redirect requests to a upstream server it does not work like expected. It&amp;rsquo;s a common setup when you use memcached inside nginx to cache your pages like I do.&lt;/p&gt;
+
+&lt;p&gt;That does not work because nginx does not use &lt;em&gt;error_page&lt;/em&gt; recursively by default. If the request comes from a &lt;em&gt;error_page&lt;/em&gt; (like 404 on my example), nginx ignores every other &lt;em&gt;error_page&lt;/em&gt; setting. So the only thing you should do is to set &lt;em&gt;&lt;a href=&#34;http://wiki.nginx.org/HttpCoreModule#recursive_error_pages&#34;&gt;recursive_error_pages&lt;/a&gt;&lt;/em&gt; on and everything works like a charm:&lt;/p&gt;
+
+&lt;p&gt;&lt;script src=&#34;//gist.github.com/nossila/4557033.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gmail Building: Find out where your emails are stored</title>
+      <link>http://alisson.net/blog/2011/02/07/gmail-building-find-out-where-your-emails-are-stored/</link>
+      <pubDate>Mon, 07 Feb 2011 12:18:56 -0200</pubDate>
+      
+      <guid>http://alisson.net/blog/2011/02/07/gmail-building-find-out-where-your-emails-are-stored/</guid>
+      <description>&lt;p&gt;Gmail Building, where all of your emails are stored:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://alisson.net/images/posts/olds/21208668-5426058272_5563ab2fa2_z.jpg&#34; alt=&#34;Gmail Building&#34; title=&#34;Gmail Building&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first thing I noticed when looking through the window of the &lt;a href=&#34;http://deskmetrics.com/&#34;&gt;DeskMetrics&lt;/a&gt;&amp;rsquo; office is a building that looks exactly like the Gmail Logo. I couldn&amp;rsquo;t not share it with you guys.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>So I have decided to blog</title>
+      <link>http://alisson.net/blog/2011/01/05/so-i-have-decided-to-blog/</link>
+      <pubDate>Wed, 05 Jan 2011 20:26:37 -0200</pubDate>
+      
+      <guid>http://alisson.net/blog/2011/01/05/so-i-have-decided-to-blog/</guid>
+      <description>&lt;p&gt;And lets begin, I&amp;rsquo;ve decided to return to blogging, but this time I decided to blog only in English, so I can practice more my writing skills.&lt;/p&gt;
+
+&lt;p&gt;This blog is hosted on &lt;a href=&#34;http://posterous.com/&#34;&gt;Posterous&lt;/a&gt;. I thought about writing a simple blog using some language I don&amp;rsquo;t know much yet, but it would take some of my precious time from working on &lt;a href=&#34;http://deskmetrics.com/&#34;&gt;DeskMetrics&lt;/a&gt;. I thought about building it using Django and a simple blog app like django-articles, which I&amp;rsquo;ve done a thousand times already so, forget about it! Setting up WordPress on my domain? Not learning much too, so lets give &lt;a href=&#34;http://posterous.com/&#34;&gt;Posterous&lt;/a&gt; a shot and see if it&amp;rsquo;ll work for me. If not, I&amp;rsquo;ll probably try to build some thing from scratch.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
