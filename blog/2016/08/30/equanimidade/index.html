@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.16-DEV" />
 
-  <title>Nginx error_page with proxy and memcached &middot; Alisson Patricio</title>
+  <title>Equanimidade &middot; Alisson Patricio</title>
 
   
   
@@ -175,7 +175,7 @@
 
 
 <div class="header">
-  <h1>Nginx error_page with proxy and memcached</h1>
+  <h1>Equanimidade</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -184,7 +184,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>17 Jan 2013, 07:31</time>
+    <time>30 Aug 2016, 16:34</time>
   </div>
 
   
@@ -195,30 +195,35 @@
 
 </div>
 
-  <p>Today I was trying to setup a custom error_page on my nginx server and I had some hard time trying to make it work so here&rsquo;s what I&rsquo;ve learned.</p>
+  <p>Me perguntando o porque da existência de tudo, estamos fazendo o que? Porque tudo isso? Essa pergunta me gerou todo tipo de questionamento sobre minhas ações, o que é certo o que é errado? Certamente são pontos de vistas opostos, certo não existe sem o errado; São opostos da mesma coisa: julgamento; Assim como um imã e seu polo norte e polo sul, são opostos da mesma coisa, movimento de photons.</p>
 
-<p>When serving static files or have the simplest upstream configuration I could just easily set <em>error_page</em> and everything should work like its supposed to, like this:</p>
+<p>Quando jogamos uma pedra mirando num alvo ela vai ter um percurso pre estabelecido pelas leis da fisica, não sai fazendo coisas diversas no caminho se não ir em direção ao alvo. Nesta cena temos 2 coisas, o jogador e o jogado; Nos somos a sua imagem e semelhança; O jogador e o jogado são a mesma coisa: consciencia; Decidindo as nossas ações escolhemos pra onde vamos e assim vamos nos jogando pra direção que quisermos.</p>
 
-<script src="//gist.github.com/nossila/4557047.js"></script>
+<p>E as analogias da natureza estão em toda a parte, já é de conhecimento que existem certas leis que governam o plano da existencia.</p>
 
-<p>But when you make use of <em>error_page</em> as a way to redirect requests to a upstream server it does not work like expected. It&rsquo;s a common setup when you use memcached inside nginx to cache your pages like I do.</p>
+<p>Uma analogia importante é sua consciencie (sua atenção), vai pra onde? Pra criação ou consumo? A medida que a consciencia se move mudamos o ponto de vista (a posição para observar a si mesma, nada existe se não ela); Sul, Norte? Jogador, Jogado? Certo, Errado? Consumo, Criação? Quanto mais você consume menos consegue criar. Como passamos o tempo? Pra onde nos jogamos?</p>
 
-<p>That does not work because nginx does not use <em>error_page</em> recursively by default. If the request comes from a <em>error_page</em> (like 404 on my example), nginx ignores every other <em>error_page</em> setting. So the only thing you should do is to set <em><a href="http://wiki.nginx.org/HttpCoreModule#recursive_error_pages">recursive_error_pages</a></em> on and everything works like a charm:</p>
+<p>O que deixamos pra gerações futuras é o nosso trabalho, é a mesma coisa em outras palavras; O que criamos vai ser consumido, e o que cosumimos foi criado; Uma casa pra morar, uma refeição pra se alimentar; As plantas estão ai, o que plantamos alguem colhe, aquele que também é a nossa imagem semelhança; Se plantamos uma foresta produtivel de acordo com as necessidades da comunidade temos uma independencia incrivel; Todo necessario já é provido;</p>
 
-<p><script src="//gist.github.com/nossila/4557033.js"></script></p>
+<p>&ldquo;O caminho do céu é estreito&rdquo;, realmente não é facil ter esse equilibrio na vida e enxergar o mundo vendo isso. Quanto mais pra esquerda você ta menos a direita estará, quanto mais energia colocamos em movermos pelo espaço menos nos movemos pelo tempo. Pra conseguir se equilibrar nesse caminho estreiro é um treino, amarre uma corda entre duas arvores e treine andar nela, bem possivel que consiga se quiser, se ter fé!</p>
+
+<p>O inferno é interno, ver o outro como um ser aparte, mas é irmão, é feito a nossa imagem e semelhança assim como os animais, as arvores, os fungos, o solo, as pedras, a agua, o fogo, o ar; Você é o conjunto disso tudo, gostando ou não, sem o outro não há você, sem direita não há esquerda.</p>
+
+<p>O céu é aqui e agora.
+Não precisamos morrer pra ver Deus.</p>
 
 
   
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="http://alisson.net/blog/2011/02/07/gmail-building-find-out-where-your-emails-are-stored/"><i class="fa fa-chevron-left"></i></a>
+    <a href="http://alisson.net/blog/2013/01/17/nginx-error_page-with-proxy-and-memcached/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="http://alisson.net/blog/2011/02/07/gmail-building-find-out-where-your-emails-are-stored/">Gmail Building: Find out where your emails are stored</a>
+      <a href="http://alisson.net/blog/2013/01/17/nginx-error_page-with-proxy-and-memcached/">Nginx error_page with proxy and memcached</a>
     </nav>
     
   </div>
@@ -227,14 +232,8 @@
   </div>
   <div class="pure-u-10-24">
     
-    <nav class="next">
-      <a href="http://alisson.net/blog/2016/08/30/equanimidade/">Equanimidade</a>
-    </nav>
-    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="http://alisson.net/blog/2016/08/30/equanimidade/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
